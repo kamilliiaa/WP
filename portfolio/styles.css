@@ -1,0 +1,203 @@
+/* Model pudełkowy */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ustawienia całej strony */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7ddff;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Nagłówek */
+header {
+    background-color: #263b5e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    margin-bottom: 12px;
+}
+
+/* Nawigacja */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Główna zawartość */
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Sekcje */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #263b5e;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+h3 {
+    margin: 15px 0 8px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+/* Linki */
+a {
+    color: #1769aa;
+}
+
+main a {
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #0d3f70;
+}
+
+/* Karty projektów */
+article {
+    background-color: white;
+    border-left: 5px solid #3978b8;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Przyciski */
+button {
+    background-color: #263b5e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3978b8;
+}
+
+/* Widoczny fokus klawiatury */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #e09f3e;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Stopka */
+footer {
+    background-color: #263b5e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsywność – tablety i telefony */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section,
+    article {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
+
+/* Dodatkowe style dla przycisku "Pokaż ciekawostke" */
+#przycisk-ciekawostka {
+    margin-top: 10px;
+    background-color: #263b5e;
+    color: white;
+}
+
+#przycisk-ciekawostka:hover {
+    background-color: #3978b8;
+}
+
+
+/* Ustawienia dla całej strony, aby stopka była na dole */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
